@@ -18,9 +18,9 @@
     --color-bg-s: #f7fcff
     --color-bg-i: #f9f9f9
 
-    --font-h: 54px
+    --font-h: 42px
     --font-hs: 50px
-    --font-l: 36px
+    --font-l: 30px
     --font-n: 34px
     --font-ls: 32px
     --font-ns: 30px
@@ -49,7 +49,7 @@ body
     z-index: 11
 
 .container
-    max-width: 1440px
+    max-width: 1132px
 
 .button
     font-size: var(--font-m)
@@ -80,8 +80,8 @@ body
     border: 1px solid #F4F4F4
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06)
     border-radius: 10px
-    padding: 21px 19px
-    margin-bottom: 30px
+    padding: 27px 19px
+    margin-bottom: 18px
 
     &::placeholder
         font-size: var(--font-a)
@@ -95,11 +95,11 @@ body
     position: relative
 
     .main
-        padding: 47px 99px 46px 105px
+        padding: 29px 0 12px 0
 
     .logo
-        width: 62px
-        height: 68px
+        width: 50px
+        height: 54px
 
     .columns
         align-items: center
@@ -109,10 +109,13 @@ body
         display: flex
         justify-content: space-between
         align-items: center
+
+        li 
+            margin: 0
     
     .link
-        color: var(--color-m)
-        line-height: 24px
+        color: var(--font-xs)
+        line-height: 22px
         text-decoration: none
 
         &:hover
@@ -131,16 +134,16 @@ body
 
     .phone
         font-weight: 500
-        font-size: var(--font-m)
-        line-height: 29px
+        font-size: var(--font-s)
+        line-height: 24px
         color: var(--color-m)
 
     .time
-        font-size: var(--font-xs)
-        line-height: 22px
+        font-size: var(--font-xxs)
+        line-height: 19px
         color: var(--color-l)
         margin: 0
-        padding-top: 2px
+        padding-top: 6px
 
     .burger
         display: none
@@ -153,20 +156,21 @@ body
     background-image: url('../images/main.png')
     background-repeat: no-repeat
     background-position: right
-    height: 847px
+    height: 667px
 
     .main
-        padding: 86px 99px 187px 105px
+        padding: 54px 0 159px 0
 
     .title
         font-weight: 500
         font-size: var(--font-h)
-        line-height: 65px
+        line-height: 51px
+        margin: 0
 
     .subtitle
-        font-size: var(--font-l)
-        line-height: 44px
-        padding: 39px 0 49px 0
+        font-size: var(--font-ns)
+        line-height: 36px
+        padding: 36px 0
         margin: 0
 
     .image
@@ -182,7 +186,7 @@ body
         display: flex
         justify-content: flex-start
         align-items: center
-        padding: 0 0 34px 0
+        padding: 0 0 33px 0
 
     .round
         width: 38px
@@ -190,16 +194,16 @@ body
 
     .text
         margin: 0
-        font-size: var(--font-m)
-        line-height: 29px
+        font-size: var(--font-s)
+        line-height: 24px
         padding-left: 18px
 
     .learn
-        padding-top: 70px
+        padding-top: 29px
 
 .we
     .main
-        padding: 120px 98px 6px 98px
+        padding: 120px 0 6px 0
 
     .title
         font-size: var(--font-l)
@@ -239,8 +243,8 @@ body
 
     .heading
         font-weight: 500
-        font-size: var(--font-m)
-        line-height: 29px
+        font-size: var(--font-ms)
+        line-height: 27px
         text-align: center
         margin: 0
 
@@ -269,7 +273,7 @@ body
         
 
     .card
-        padding: 46px 20px 24px 20px
+        padding: 46px 26px 18px 26px
         background: var(--color-bg-m)
         border: none
         display: flex
@@ -290,32 +294,33 @@ body
             
 
     .signature
-        padding: 162px 34px 162px 35px
+        padding: 46px 12px 258px 12px
 
-        &:hover
-            padding: 46px 49px 278px 20px
-            background: var(--color-bg-m)
+        &:hover .new
+            text-align: left
+            color: var(--color-bg-m)
+
 
     .heading
-        font-size: var(--font-m)
-        line-height: 29px
+        font-size: var(--font-ms)
+        line-height: 27px
         text-align: center
         margin: 0
         color: var(--color-m)
 
     .text
-        padding: 30px 0 44px 0
+        padding: 33px 0
         font-weight: 400
-        font-size: var(--font-t)
-        line-height: 31px
+        font-size: var(--font-m)
+        line-height: 29px
         color: var(--color-s)
         text-align: center
         margin: 0
 
     .technic
-        width: 265px
+        width: 207px
         max-width: 100%
-        height: 214px
+        height: 199px
         max-height: 100%
         display: flex
         justify-content: center
@@ -328,8 +333,8 @@ body
 
     .new
         color: var(--color-t)
-        font-size: var(--font-t)
-        line-height: 31px
+        font-size: var(--font-ms)
+        line-height: 27px
         text-align: center
         margin: 0
 
@@ -396,7 +401,7 @@ body
 
     .watchlink 
         color: var(--color-g)
-        font-size: var(--font-m)
+        font-size: var(--font-ms)
         line-height: 29px
         
 
@@ -407,8 +412,8 @@ body
     .more
         text-decoration: none
         color: var(--color-g)
-        font-size: var(--font-g)
-        line-height: 34px
+        font-size: var(--font-m)
+        line-height: 29px
 
         &:hover
             color: var(--color-d)
@@ -424,7 +429,7 @@ body
 
     .repair
         width: 100%
-        height: 607px
+        height: 536px
     
     .img
         width: 100%
@@ -432,7 +437,7 @@ body
         object-fit: cover
 
     .main
-        padding: 50px 100px 25px 48px
+        padding: 37px 100px 19px 112px
         display: flex
         justify-content: start
         flex-direction: column
@@ -446,17 +451,17 @@ body
         width: 530px
 
     .title
-        font-size: var(--font-l)
-        line-height: 44px
+        font-size: var(--font-ns)
+        line-height: 36px
         margin: 0
 
         .color
             color: var(--color-s)
     
     .subtitle
-        padding-top: 15px
-        font-size: var(--font-m)
-        line-height: 29px
+        padding-top: 20px
+        font-size: var(--font-ms)
+        line-height: 27px
         text-align: center
         margin: 0
 
@@ -464,18 +469,19 @@ body
         display: none
 
     .form
-        width: 324px
+        width: 343px
         display: flex
         flex-direction: column
         justify-content: space-between
         align-items: center
-        padding: 40px 0 11px 0
+        padding: 19px 0 14px 0
 
     .text
-        width: 380px
-        font-size: var(--font-xxs)
-        line-height: 19px
+        width: 401px
+        font-size: var(--font-xxxs)
+        line-height: 18px
         text-align: center
+        margin: 0
 
         .link
             color: var(--color-s)
@@ -502,7 +508,7 @@ body
         background: var(--color-bg-m)
         box-shadow: 0px 3px 24px 12px rgba(0, 0, 0, 0.02)
         border-radius: 40px
-        padding: 68px 64px
+        padding: 68px 42px 58px 64px
         max-width: 377px
 
     .box
@@ -528,19 +534,25 @@ body
     background: var(--color-m)
 
     .main
-        padding: 114px
+        padding: 78px 0
         text-align: center
 
     .text
         line-height: 24px
         color: var(--color-f)
         margin: 0
-        padding-bottom: 25px
+        
+
+    .politic
+        padding-top: 40px
+        width: 512px
+        margin: 0 auto
 
     .link
         line-height: 24px
         color: var(--color-i)
-        margin: 0
+        margin: 0 auto
+        text-align: center
 
         &:hover
             text-decoration: none
@@ -621,24 +633,25 @@ body
     .subtitle 
         font-size: var(--font-z)
 
+@media screen and (max-width: 1300px) 
+    .discount
+        .main
+            padding: 37px 100px 19px 10px
+
 
 @media screen and (max-width: 1156px) 
     .price
         .card
             height: 430px
 
-
-@media screen and (max-width: 1151px) 
-    .display
-        .main
-            padding: 86px 99px 122px 105px
-
-@media screen and (max-width: 1113px) 
-    .display
-        .main
-            padding: 86px 99px 93px 105px
+    .discount
+        .block
+            width: 500px
 
 @media screen and (max-width: 1024px) 
+    .container
+        max-width: 958px
+
     .header
         .main
             padding: 26px 18px 29px 53px
@@ -648,11 +661,11 @@ body
             line-height: 22px
 
     .display
-        background-image: url('/images/main-s.png')
+        background-image: url('../images/main-s.png')
         background-position: right bottom
 
         .main
-            padding: 27px 50px 261px 50px
+            padding: 27px 0 142px 0
 
         .title
             font-size: var(--font-hs)
@@ -667,7 +680,7 @@ body
 
     .we
         .main
-            padding: 120px 58px 6px 58px
+            padding: 120px 0 6px 0
 
         .card
             padding: 61px 0 17px 0
@@ -726,7 +739,7 @@ body
             object-fit: cover
 
         .main
-            padding: 39px 51px 25px 48px
+            padding: 39px 0 25px 0
             width: auto
 
         .block
@@ -742,35 +755,25 @@ body
             font-size: var(--font-s)
             line-height: 24px
 
-.map
-    .block
-        right: 6%
+    .map
+        .block
+            right: 6%
 
-.footer
-    .text
-        line-height: 18px
-        font-size: var(--font-xxxs)
-
-
-@media screen and (max-width: 1024px) 
-    .display
-        .main
-            padding: 27px 50px 232px 50px
-
-@media screen and (max-width: 979px) 
-    .display
-        .main
-            padding: 27px 50px 170px 50px
+    .footer
+        .text
+            line-height: 18px
+            font-size: var(--font-xxxs)
 
 @media screen and (max-width: 953px) 
     .discount
         .main
             padding: 20px 50px
 
-@media screen and (max-width: 843px) 
+
+@media screen and (max-width: 878px) 
     .display
         .main
-            padding: 27px 50px 142px 50px
+            padding: 27px 0 80px 0
 
 @media screen and (max-width: 840px) 
     .button
@@ -1086,7 +1089,10 @@ body
         .text
             font-size: var(--font-w)
             line-height: 13px
-            padding-bottom: 14px
+
+        .politic
+            padding-top: 14px
+            width: 284px
 
         .link
             padding-top: 0
