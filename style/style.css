@@ -1216,7 +1216,17 @@ body {
     max-width: 100%;
   }
   .map .box {
-    padding-bottom: 2px;
+    padding-bottom: 16px;
+    text-align: center;
+  }
+  .map .icons-3 {
+    width: 210px;
+    margin: 0 auto;
+  }
+  .map .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .map .text {
     font-size: var(--font-xxs);
