@@ -1,0 +1,1117 @@
+@import '../font/stylesheet'
+
+:root
+    --color-m: #111111
+    --color-s: #0ad080
+    --color-xs: #009b5c
+    --color-t: #8ce9c3
+    --color-g: #07e48b
+    --color-d: #00ce7b
+    --color-e: #00b36a
+    --color-l: #4e4e4e
+    --color-b: #18bbfc
+    --color-h: #4acbff
+    --color-a: #00aff5
+    --color-f: #5f5f5f
+    --color-i: #c5c5c5
+    --color-bg-m: #ffffff
+    --color-bg-s: #f7fcff
+    --color-bg-i: #f9f9f9
+
+    --font-h: 54px
+    --font-hs: 50px
+    --font-l: 36px
+    --font-n: 34px
+    --font-ls: 32px
+    --font-ns: 30px
+    --font-g: 28px
+    --font-t: 26px
+    --font-m: 24px
+    --font-ms: 22px
+    --font-s: 20px
+    --font-a: 19px
+    --font-xs: 18px
+    --font-xxs: 16px
+    --font-xxxs: 15px
+    --font-z: 14px
+    --font-d: 12px
+    --font-w: 11px
+
+body
+    font-family: 'Inter'
+    font-weight: 400
+    background-color: var(--color-bg-m)
+    color: var(--color-m)
+    font-size: var(--font-s)
+
+.lock
+    overflow-y: hidden
+    z-index: 11
+
+.container
+    max-width: 1440px
+
+.button
+    font-size: var(--font-m)
+    line-height: 29px
+    padding: 23px 32px
+    background: var(--color-b)
+    border-radius: 20px
+    text-decoration: none
+    color: var(--color-bg-m)
+
+    &:visited
+        color: var(--color-bg-m)
+
+    &:hover
+        text-decoration: none
+        background: var(--color-h)
+        color: var(--color-bg-m)
+
+    &:active
+        background: var(--color-a)
+
+.button-discount
+    width: 100%
+    text-align: center
+
+.input
+    background: var(--color-bg-i)
+    border: 1px solid #F4F4F4
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06)
+    border-radius: 10px
+    padding: 21px 19px
+    margin-bottom: 30px
+
+    &::placeholder
+        font-size: var(--font-a)
+        line-height: 23px
+        color: #CECECE
+
+    &:focus-visible
+        outline: var(--color-s) auto 1px
+
+.header
+    position: relative
+
+    .main
+        padding: 47px 99px 46px 105px
+
+    .logo
+        width: 62px
+        height: 68px
+
+    .columns
+        align-items: center
+
+    .list
+        list-style-type: none
+        display: flex
+        justify-content: space-between
+        align-items: center
+    
+    .link
+        color: var(--color-m)
+        line-height: 24px
+        text-decoration: none
+
+        &:hover
+            color: var(--color-s)
+            text-decoration: none
+
+        &:active
+            color: var(--color-xs)
+            text-decoration: none
+
+    .info
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    .phone
+        font-weight: 500
+        font-size: var(--font-m)
+        line-height: 29px
+        color: var(--color-m)
+
+    .time
+        font-size: var(--font-xs)
+        line-height: 22px
+        color: var(--color-l)
+        margin: 0
+        padding-top: 2px
+
+    .burger
+        display: none
+
+    .cross
+        display: none
+
+.display
+    background-color: var(--color-bg-s)
+    background-image: url('/images/main.png')
+    background-repeat: no-repeat
+    background-position: right
+    height: 847px
+
+    .main
+        padding: 86px 99px 187px 105px
+
+    .title
+        font-weight: 500
+        font-size: var(--font-h)
+        line-height: 65px
+
+    .subtitle
+        font-size: var(--font-l)
+        line-height: 44px
+        padding: 39px 0 49px 0
+        margin: 0
+
+    .image
+        display: none
+
+    .info
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+
+    .block
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        padding: 0 0 34px 0
+
+    .round
+        width: 38px
+        height: 37px
+
+    .text
+        margin: 0
+        font-size: var(--font-m)
+        line-height: 29px
+        padding-left: 18px
+
+    .learn
+        padding-top: 70px
+
+.we
+    .main
+        padding: 120px 98px 6px 98px
+
+    .title
+        font-size: var(--font-l)
+        line-height: 44px
+        text-align: center
+        margin: 0 auto
+
+    .block
+        padding-top: 91px
+
+    .card
+        position: relative
+        background: var(--color-bg-s)
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06)
+        border-radius: 20px
+        border: none
+        padding: 61px 14px 29px 14px
+        height: 255px
+        margin: 23px
+
+    .number
+        position: absolute
+        left: calc( 50% - 31px )
+        top: -31px
+        width: 62px
+        height: 62px
+        border-radius: 50%
+        background: var(--color-s)
+        font-weight: 500
+        font-size: var(--font-n)
+        line-height: 41px
+        display: flex
+        justify-content: center
+        align-items: center
+        color: var(--color-bg-m)
+        margin: 0
+
+    .heading
+        font-weight: 500
+        font-size: var(--font-m)
+        line-height: 29px
+        text-align: center
+        margin: 0
+
+    .text
+        font-size: var(--font-s)
+        line-height: 24px
+        text-align: center
+        padding-top: 10px
+
+.price
+    .color
+        background: var(--color-bg-s)
+        padding-bottom: 120px
+
+    .title
+        font-size: var(--font-l)
+        line-height: 44px
+        text-align: center
+        margin: 0 auto
+
+    .block
+        position: relative
+        margin: 60px 0 38px 0
+        border-radius: 50px
+        overflow: hidden
+        
+
+    .card
+        padding: 46px 20px 24px 20px
+        background: var(--color-bg-m)
+        border: none
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 16px
+        text-decoration: none
+
+        &:hover
+            background: var(--color-s)
+
+        &:hover .text
+            color: var(--color-bg-m)
+
+    .margin
+        margin-bottom: 0
+            
+
+    .signature
+        padding: 162px 34px 162px 35px
+
+        &:hover
+            padding: 46px 49px 278px 20px
+            background: var(--color-bg-m)
+
+    .heading
+        font-size: var(--font-m)
+        line-height: 29px
+        text-align: center
+        margin: 0
+        color: var(--color-m)
+
+    .text
+        padding: 30px 0 44px 0
+        font-weight: 400
+        font-size: var(--font-t)
+        line-height: 31px
+        color: var(--color-s)
+        text-align: center
+        margin: 0
+
+    .technic
+        width: 265px
+        max-width: 100%
+        height: 214px
+        max-height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+
+    .img
+        width: 100%
+        height: 100%
+        object-fit: contain
+
+    .new
+        color: var(--color-t)
+        font-size: var(--font-t)
+        line-height: 31px
+        text-align: center
+        margin: 0
+
+    .table
+        display: none
+        position: absolute
+        top: 0
+        left: 0
+        background: rgba(248, 248, 248, 0.85)
+        backdrop-filter: blur(9px)
+        border-radius: 50px
+        padding: 56px 37px
+        width: 60%
+
+    .notable
+        display: block
+
+    .box 
+        position: relative
+
+        .cross
+            position: absolute
+            top: -20px
+            right: 0
+
+    .rate
+        width: 100%
+        border-bottom: 1px solid var(--color-g)
+        color: var(--color-m)
+        text-decoration: none
+
+    .appellation
+        margin: 0
+        padding: 15px 0
+
+    .worth
+        margin: 0
+        text-align: right
+        padding: 15px 0
+
+        .bold
+            font-weight: bold
+
+    .else
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+
+    .checklist
+        width: 100%
+        display: none
+
+    .visible
+        display: flex
+
+    .watchlist
+        list-style-type: none
+        margin-bottom: 29px
+
+        &:last-child
+            margin-bottom: 0
+
+    .watchlink 
+        color: var(--color-g)
+        font-size: var(--font-m)
+        line-height: 29px
+        
+
+        &:hover
+            text-decoration: none
+            color: var(--color-d)
+
+    .more
+        text-decoration: none
+        color: var(--color-g)
+        font-size: var(--font-g)
+        line-height: 34px
+
+        &:hover
+            color: var(--color-d)
+
+        &:active
+            color: var(--color-e)
+
+        &:focus
+            box-shadow: none
+
+.discount
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06)
+
+    .repair
+        width: 100%
+        height: 607px
+    
+    .img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+    .main
+        padding: 50px 100px 25px 48px
+        display: flex
+        justify-content: start
+        flex-direction: column
+        width: 530px
+    
+    .block
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        width: 530px
+
+    .title
+        font-size: var(--font-l)
+        line-height: 44px
+        margin: 0
+
+        .color
+            color: var(--color-s)
+    
+    .subtitle
+        padding-top: 15px
+        font-size: var(--font-m)
+        line-height: 29px
+        text-align: center
+        margin: 0
+
+    .image
+        display: none
+
+    .form
+        width: 324px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        padding: 40px 0 11px 0
+
+    .text
+        width: 380px
+        font-size: var(--font-xxs)
+        line-height: 19px
+        text-align: center
+
+        .link
+            color: var(--color-s)
+            text-decoration: underline
+
+            &:hover
+                text-decoration: none
+
+.map
+    position: relative
+    width: 100%
+    height: 746px
+    padding-top: 120px
+
+    .img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+    .block
+        position: absolute
+        bottom: 65px
+        right: 20%
+        background: var(--color-bg-m)
+        box-shadow: 0px 3px 24px 12px rgba(0, 0, 0, 0.02)
+        border-radius: 40px
+        padding: 68px 64px
+        max-width: 377px
+
+    .box
+        padding-bottom: 16px
+    
+    .text
+        font-weight: 500
+        font-size: var(--font-s)
+        line-height: 24px
+        color: var(--color-s)
+        margin: 0
+    
+    .info
+        font-size: var(--font-xs)
+        line-height: 22px
+        color: var(--color-m)
+        padding-top: 10px
+
+        &:hover
+            text-decoration: none
+
+.footer
+    background: var(--color-m)
+
+    .main
+        padding: 114px
+        text-align: center
+
+    .text
+        line-height: 24px
+        color: var(--color-f)
+        margin: 0
+        padding-bottom: 25px
+
+    .link
+        line-height: 24px
+        color: var(--color-i)
+        margin: 0
+
+        &:hover
+            text-decoration: none
+
+.popup 
+    display: none
+    justify-content: center
+    align-items: center
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    visibility: visible
+    background: #00000060
+    opacity: 1
+    z-index: 100
+
+    .dialog 
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+        background: var(--color-bg-m)
+        padding: 35px 45px
+        border-radius: 20px
+        width: 90vw
+        height: 90vh
+
+    .thanks 
+        width: 687px
+        height: 432px
+        align-items: center
+        justify-content: center
+        padding: 66px 144px
+
+    .round
+        padding-bottom: 36px
+
+    .top 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-direction: column
+        width: 100%
+
+    .bottom 
+        flex-grow: 1
+        overflow: auto
+
+    .heading
+        font-weight: 500
+        font-size: var(--font-l)
+        line-height: 44px
+        text-align: center
+
+    .text
+        font-size: var(--font-ns)
+        line-height: 36px
+        text-align: center
+        padding-top: 22px
+
+    .cross 
+        position: absolute
+        top: 0
+        right: -40px
+        width: 24px
+        height: 24px
+
+    .bottom 
+        width: 100%
+
+    .title 
+        font-weight: 600
+        font-size: var(--font-xxs)
+
+    .subtitle 
+        font-size: var(--font-z)
+
+
+@media screen and (max-width: 1156px) 
+    .price
+        .card
+            height: 430px
+
+
+@media screen and (max-width: 1151px) 
+    .display
+        .main
+            padding: 86px 99px 122px 105px
+
+@media screen and (max-width: 1113px) 
+    .display
+        .main
+            padding: 86px 99px 93px 105px
+
+@media screen and (max-width: 1024px) 
+    .header
+        .main
+            padding: 26px 18px 29px 53px
+
+        .link
+            font-size: var(--font-xs)
+            line-height: 22px
+
+    .display
+        background-image: url('/images/main-s.png')
+        background-position: right bottom
+
+        .main
+            padding: 27px 50px 261px 50px
+
+        .title
+            font-size: var(--font-hs)
+            line-height: 61px
+
+        .subtitle
+            font-size: var(--font-ls)
+            line-height: 39px
+
+        .learn
+            padding-top: 70px
+
+    .we
+        .main
+            padding: 120px 58px 6px 58px
+
+        .card
+            padding: 61px 0 17px 0
+            height: 234px
+            margin: 23px 0
+
+        .number
+            font-size: var(--font-ns)
+            line-height: 36px
+
+        .heading
+            font-size: var(--font-ms)
+            line-height: 27px
+
+        .text
+            padding-top: 6px
+
+    .price
+        .color
+            padding-bottom: 120px
+
+        .main
+            margin: 0 50px
+
+        .card
+            margin-bottom: 8px
+
+        .margin-1
+            margin-bottom: 8px !important
+
+        .signature
+            padding: 162px 34px 162px 35px
+
+            &:hover
+                padding: 46px 49px 278px 20px
+                background: var(--color-bg-m)
+
+        .text
+            padding: 30px 0 33px 0
+
+        .new
+            font-size: var(--font-m)
+            line-height: 29px
+
+        .else
+            padding-top: 40px
+
+    .discount
+        .repair
+            width: 100%
+            height: 622px
+        
+        .img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+        .main
+            padding: 39px 51px 25px 48px
+            width: auto
+
+        .block
+            width: auto
+
+        .title
+            font-size: var(--font-ns)
+            line-height: 36px
+            text-align: center
+        
+        .subtitle
+            padding-top: 23px
+            font-size: var(--font-s)
+            line-height: 24px
+
+.map
+    .block
+        right: 6%
+
+.footer
+    .text
+        line-height: 18px
+        font-size: var(--font-xxxs)
+
+
+@media screen and (max-width: 1024px) 
+    .display
+        .main
+            padding: 27px 50px 232px 50px
+
+@media screen and (max-width: 979px) 
+    .display
+        .main
+            padding: 27px 50px 170px 50px
+
+@media screen and (max-width: 953px) 
+    .discount
+        .main
+            padding: 20px 50px
+
+@media screen and (max-width: 843px) 
+    .display
+        .main
+            padding: 27px 50px 142px 50px
+
+@media screen and (max-width: 840px) 
+    .button
+        font-size: var(--font-xs)
+        line-height: 22px
+        padding: 17px 28px
+
+    .header
+        .main
+            padding: 14px 23px
+
+        .logo
+            width: 36px
+            height: 40px
+
+        .carte
+            display: none
+
+        .dynamic
+            position: absolute
+            bottom: -320px
+            right: 0
+            display: flex
+            justify-content: flex-end
+            align-items: flex-end
+            flex-direction: column
+            background: rgba(255, 255, 255, 0.85)
+            box-shadow: -1px 0px 12px rgba(0, 0, 0, 0.08)
+            backdrop-filter: blur(9px)
+            border-top-left-radius: 50px
+            padding: 17px
+
+        .list
+            flex-direction: column
+            align-items: flex-start
+            margin: 0
+
+            li
+                padding-top: 25px
+                margin: 0
+
+                &:first-child
+                    padding-top: 0
+
+        .link
+            margin: 0
+
+        .info
+            align-items: flex-end
+            padding-top: 48px
+
+        .phone
+            font-size: var(--font-xs)
+            line-height: 22px
+
+        .time
+            font-size: var(--font-xxs)
+            line-height: 19px
+
+        .burger
+            display: flex
+            justify-content: flex-end
+            align-items: center
+
+        .not-active
+            display: none
+        
+        .cross
+            display: none
+
+        .active
+            display: flex
+            justify-content: flex-end
+            align-items: center
+
+    .display
+        background-image: none
+        background-position: right
+        height: 767px
+
+        .main
+            padding: 40px 35px
+
+        .title
+            font-size: var(--font-m)
+            line-height: 29px
+            text-align: center
+
+        .subtitle
+            font-size: var(--font-xs)
+            line-height: 22px
+            padding: 3px 0 18px 0
+            margin: 0 auto
+            text-align: center
+
+        .image
+            display: flex
+            justify-content: center
+            align-items: center
+
+        .info
+            flex-direction: column-reverse
+
+        .block
+            padding: 11px 0
+
+        .round
+            width: 30px
+            height: 30px
+
+        .text
+            font-size: var(--font-xs)
+            line-height: 22px
+            padding-left: 15px
+
+        .learn
+            padding: 25px 0 51px 0
+            margin: 0 auto
+
+    .price
+        .color
+            padding-bottom: 50px
+
+        .main
+            margin: 0 18px
+
+        .title
+            font-size: var(--font-s)
+            line-height: 24px
+
+        .block
+            margin: 30px 0 0 0
+            border-radius: 40px
+            
+        .card
+            padding: 23px 9px 6px 9px
+            background: var(--color-bg-m)
+            margin-bottom: 6px
+            height: 210px
+
+        .margin-1
+            margin-bottom: 6px !important
+        
+        .margin-2
+            margin-bottom: 6px !important
+
+        .margin
+            margin-bottom: 0
+
+        .heading
+            font-size: var(--font-xxs)
+            line-height: 19px
+
+        .text
+            padding: 22px 0
+            font-size: var(--font-xxs)
+            line-height: 19px
+
+        .technic
+            width: 121px
+            max-width: 100%
+            height: 98px
+            max-height: 100%
+
+        .signature
+            padding: 23px 12px 136px 12px
+
+            &:hover
+                padding: 23px 12px 136px 12px
+
+        .new
+            font-size: var(--font-z)
+            line-height: 17px
+
+    .discount
+        background: var(--color-bg-s)
+        box-shadow: none
+
+        .repair
+            display: none
+
+        .main
+            padding: 0px 0px 25px 0px
+            width: auto
+            align-items: center
+        
+        .block
+            width: auto
+
+        .title
+            font-size: var(--font-s)
+            line-height: 24px
+        
+        .subtitle
+            padding: 10px 0 20px 0
+            font-size: var(--font-xxs)
+            line-height: 19px
+
+        .image
+            display: block
+            width: 100%
+            height: 100%
+
+        .picture
+            width: 100%
+            height: 100%
+            object-fit: contain
+
+        .form
+            width: auto
+            padding: 28px 0 10px 0
+
+        .text
+            width: auto
+            font-size: var(--font-d)
+            line-height: 15px
+
+@media screen and (max-width: 720px) 
+    .price
+        .else
+            display: none
+
+    .popup
+        .dialog 
+            width: 80vw
+
+        .thanks 
+            width: 278px
+            height: 341px
+            padding: 66px 7px
+
+        .round
+            padding-bottom: 16px
+
+        .heading
+            font-size: var(--font-m)
+            line-height: 29px
+
+        .text
+            font-size: var(--font-xs)
+            line-height: 22px
+            padding-top: 10px
+
+@media screen and (max-width: 614px) 
+    .display
+        height: 796px
+
+@media screen and (max-width: 600px) 
+    .we
+        .main
+            padding: 120px 18px 6px 18px
+
+        .title
+            font-size: var(--font-s)
+            line-height: 24px
+
+        .block
+            padding-top: 47px
+
+        .card
+            background: var(--color-bg-s)
+            padding: 27px 17px 14px 17px
+            height: auto
+            margin: 16px 0
+
+        .number
+            width: 34px
+            height: 34px
+            font-size: var(--font-ms)
+            line-height: 27px
+            left: calc(50% - 17px)
+            top: -17px
+
+        .heading
+            font-size: var(--font-xs)
+            line-height: 22px
+
+        .text
+            font-size: var(--font-z)
+            line-height: 17px
+            padding-top: 6px
+
+    .map
+        background: var(--color-bg-s)
+        height: 746px
+        padding-top: 138px
+
+        .block
+            bottom: auto
+            top: 0
+            right: 0
+            border-radius: 20px
+            padding: 22px 19px
+            width: 100vw
+            max-width: 100%
+
+        .box
+            padding-bottom: 2px
+        
+        .text
+            font-size: var(--font-xxs)
+            line-height: 19px
+        
+        .info
+            font-size: var(--font-z)
+            line-height: 17px
+            padding-top: 8px
+
+    .footer
+        .main
+            padding: 42px 2px
+
+        .text
+            font-size: var(--font-w)
+            line-height: 13px
+            padding-bottom: 14px
+
+        .link
+            padding-top: 0
+            font-size: var(--font-z)
+            line-height: 1%
+            vertical-align: 0
+
+@media screen and (max-width: 438px) 
+    .display
+        height: 802px
+
+@media screen and (max-width: 405px) 
+    .display
+        height: 808px
+
+        .main
+            padding: 40px 0
+
+        .info
+            padding: 0 35px
+
+@media screen and (max-width: 394px) 
+    .display
+        height: 814px
+
+@media screen and (max-width: 334px) 
+    .display
+        height: 820px
