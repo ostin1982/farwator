@@ -175,7 +175,7 @@ body {
 }
 
 .container {
-  max-width: 1132px;
+  max-width: 1192px;
 }
 
 .button {
@@ -235,7 +235,7 @@ body {
   position: relative;
 }
 .header .main {
-  padding: 29px 0 12px 0;
+  padding: 29px 30px 12px 30px;
 }
 .header .logo {
   width: 50px;
@@ -317,7 +317,7 @@ body {
   background-color: var(--color-bg-s);
 }
 .display .main {
-  padding: 54px 0 159px 0;
+  padding: 54px 30px 159px 30px;
 }
 .display .title {
   font-weight: 500;
@@ -364,7 +364,7 @@ body {
 }
 
 .we .main {
-  padding: 120px 0 6px 0;
+  padding: 120px 30px 6px 30px;
 }
 .we .title {
   font-size: var(--font-l);
@@ -700,7 +700,7 @@ body {
   background: var(--color-m);
 }
 .footer .main {
-  padding: 78px 0;
+  padding: 78px 30px;
   text-align: center;
 }
 .footer .text {
@@ -805,6 +805,11 @@ body {
     padding: 37px 100px 19px 10px;
   }
 }
+@media screen and (max-width: 1280px) {
+  .display .block {
+    background-color: rgba(255, 255, 255, 0.3764705882);
+  }
+}
 @media screen and (max-width: 1156px) {
   .type {
     background-size: auto 446px;
@@ -835,7 +840,7 @@ body {
     background-position: right bottom;
   }
   .display .main {
-    padding: 27px 0 142px 0;
+    padding: 27px 30px 142px 30px;
   }
   .display .title {
     font-size: var(--font-hs);
@@ -849,7 +854,7 @@ body {
     padding-top: 70px;
   }
   .we .main {
-    padding: 120px 0 6px 0;
+    padding: 120px 30px 6px 30px;
   }
   .we .block {
     padding-top: 30px;
@@ -914,7 +919,7 @@ body {
        object-fit: cover;
   }
   .discount .main {
-    padding: 39px 0 25px 0;
+    padding: 39px 30px 25px 30px;
     width: auto;
   }
   .discount .block {
@@ -945,7 +950,7 @@ body {
 }
 @media screen and (max-width: 878px) {
   .display .main {
-    padding: 27px 0 80px 0;
+    padding: 27px 30px 80px 30px;
   }
 }
 @media screen and (max-width: 840px) {
@@ -955,7 +960,7 @@ body {
     padding: 17px 28px;
   }
   .header .main {
-    padding: 14px 23px;
+    padding: 14px 18px;
   }
   .header .logo {
     width: 36px;
@@ -1032,7 +1037,7 @@ body {
     height: 767px;
   }
   .display .main {
-    padding: 40px 35px;
+    padding: 40px 18px;
   }
   .display .title {
     font-size: var(--font-m);
@@ -1070,6 +1075,7 @@ body {
   }
   .display .block {
     padding: 11px 0;
+    background-color: inherit;
   }
   .display .round {
     width: 30px;
@@ -1135,6 +1141,10 @@ body {
     font-size: var(--font-z);
     line-height: 17px;
   }
+  .price .table {
+    width: 100%;
+    border-radius: 40px;
+  }
   .discount {
     background: var(--color-bg-s);
     box-shadow: none;
@@ -1143,7 +1153,7 @@ body {
     display: none;
   }
   .discount .main {
-    padding: 0px 0px 25px 0px;
+    padding: 0px 18px 25px 18px;
     width: auto;
     align-items: center;
   }
@@ -1187,6 +1197,7 @@ body {
   }
   .popup .dialog {
     width: 80vw;
+    padding: 20px;
   }
   .popup .thanks {
     width: 278px;
@@ -1209,6 +1220,15 @@ body {
 @media screen and (max-width: 614px) {
   .display {
     height: 796px;
+  }
+  .price .rate {
+    font-size: var(--font-z);
+  }
+  .price .appellation {
+    padding: 8px 0;
+  }
+  .price .worth {
+    padding: 8px 0;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1303,6 +1323,15 @@ body {
   .display {
     height: 802px;
   }
+  .popup .heading {
+    font-size: var(--font-s);
+  }
+  .popup .title {
+    font-size: var(--font-xxxs);
+  }
+  .popup .subtitle {
+    font-size: var(--font-z);
+  }
 }
 @media screen and (max-width: 405px) {
   .display {
@@ -1321,6 +1350,9 @@ body {
 @media screen and (max-width: 394px) {
   .display {
     height: 814px;
+  }
+  .discount .form {
+    padding: 28px 10px 10px 10px;
   }
 }
 @media screen and (max-width: 334px) {
