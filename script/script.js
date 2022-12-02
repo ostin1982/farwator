@@ -11,6 +11,12 @@ if($('.burger')) {
             $('.cross').removeClass('active');
             $('.burger').removeClass('not-active');
         })
+
+        $('.js-link').click(() => {
+            $('.carte').removeClass('dynamic');
+            $('.cross').removeClass('active');
+            $('.burger').removeClass('not-active');
+        })
     })
 }
 
