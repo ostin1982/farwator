@@ -51,6 +51,7 @@ if(more) {
 
 const price = $('.js-price');
 const cross = $('.js-cross');
+const crossLink = $('.js-cross-link');
 const body = $('body');
 
 if(price) {
@@ -68,6 +69,13 @@ if(price) {
 
         cross.click((event) => {
             event.preventDefault();
+
+            const table = $('.table');
+            body.removeClass('lock');
+            table.removeClass('notable');
+        })
+
+        crossLink.click(() => {     
 
             const table = $('.table');
             body.removeClass('lock');
