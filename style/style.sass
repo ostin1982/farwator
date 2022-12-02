@@ -14,6 +14,7 @@
     --color-a: #00aff5
     --color-f: #5f5f5f
     --color-i: #c5c5c5
+    --color-q: #DDDDDD
     --color-bg-m: #ffffff
     --color-bg-s: #f7fcff
     --color-bg-i: #f9f9f9
@@ -43,6 +44,7 @@ body
     background-color: var(--color-bg-m)
     color: var(--color-m)
     font-size: var(--font-s)
+    
 
 .lock
     overflow-y: hidden
@@ -92,9 +94,14 @@ body
         outline: var(--color-s) auto 1px
 
 .header
-    position: relative
+    position: sticky
+    top: 0
+    left: 0
+    background: var(--color-bg-m)
+    z-index: 100
 
     .main
+        position: relative
         padding: 29px 30px 12px 30px
 
     .logo
@@ -103,6 +110,9 @@ body
 
     .columns
         align-items: center
+
+    .middle
+        display: none
 
     .list
         list-style-type: none
@@ -198,6 +208,7 @@ body
         flex-direction: column
         justify-content: space-between
         align-items: flex-start
+        margin-left: 8px
 
     .block
         display: flex
@@ -311,7 +322,7 @@ body
             
 
     .signature
-        padding: 46px 12px 258px 12px
+        padding: 46px 12px 284px 12px
 
         &:hover .new
             text-align: left
@@ -360,11 +371,11 @@ body
         position: absolute
         top: 0
         left: 0
-        background: rgba(248, 248, 248, 0.85)
-        backdrop-filter: blur(9px)
+        background: rgba(255, 255, 255, 0.95)
+        backdrop-filter: blur(5px)
         border-radius: 50px
-        padding: 56px 37px
-        width: 60%
+        padding: 22px 98px 22px 32px 
+        width: 66vw
 
     .notable
         display: block
@@ -372,14 +383,30 @@ body
     .box 
         position: relative
 
-        .cross
-            position: absolute
-            top: -20px
-            right: 0
+    .description
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    .specification
+        font-weight: 500
+        font-size: var(--font-ms)
+        line-height: 27px
+        margin: 0
+
+    .scroll 
+        overflow-y: auto
+        height: 80vh
+
+    .green
+        width: 100%
+        border-bottom: 1px solid var(--color-s)
+        color: var(--color-s)
+        text-decoration: none
 
     .rate
         width: 100%
-        border-bottom: 1px solid var(--color-g)
+        border-bottom: 1px solid var(--color-q)
         color: var(--color-m)
         text-decoration: none
 
@@ -590,6 +617,9 @@ body
     opacity: 1
     z-index: 100
 
+    .svg
+        stroke: var(--color-bg-m)
+
     .dialog 
         position: relative
         display: flex
@@ -684,7 +714,7 @@ body
 
     .header
         .main
-            padding: 26px 18px 29px 53px
+            padding: 26px 18px 29px 31px
 
         .link
             font-size: var(--font-xs)
@@ -695,12 +725,10 @@ body
         background-position: right bottom
 
     .display
+        background-position: right top
+
         .main
             padding: 27px 30px 142px 30px
-
-        .title
-            font-size: var(--font-hs)
-            line-height: 61px
 
         .subtitle
             font-size: var(--font-ls)
@@ -827,27 +855,42 @@ body
             width: 36px
             height: 40px
 
+        .middle
+            display: flex
+            justify-content: center
+            align-items: center
+            font-weight: 500
+            font-size: var(--font-d)
+            line-height: 15px
+            color: var(--color-m)
+
         .carte
-            display: none
+            opacity: 0
+            position: fixed
+            right: -100%
 
         .dynamic
-            position: absolute
-            bottom: -320px
-            right: 0
+            top: 76px
             display: flex
-            justify-content: flex-end
-            align-items: flex-end
+            justify-content: flex-start
+            align-items: flex-start
             flex-direction: column
             background: rgba(255, 255, 255, 0.85)
             box-shadow: -1px 0px 12px rgba(0, 0, 0, 0.08)
             backdrop-filter: blur(9px)
             border-top-left-radius: 50px
-            padding: 17px
+            padding: 30px
+            right: 0
+            width: 50vw
+            height: calc( 100vh - 76px )
+            transition: all 0.6s
+            opacity: 1
 
         .list
             flex-direction: column
             align-items: flex-start
             margin: 0
+            width: 100%
 
             li
                 padding-top: 25px
@@ -860,7 +903,7 @@ body
             margin: 0
 
         .info
-            align-items: flex-end
+            align-items: flex-start
             padding-top: 48px
 
         .phone
@@ -967,6 +1010,10 @@ body
             margin-bottom: 6px
             height: 210px
 
+        .specification
+            font-size: var(--font-xxs)
+            line-height: 19px
+
         .margin-1
             margin-bottom: 6px !important
         
@@ -1003,9 +1050,21 @@ body
 
         .table
             width: 100%
-            border-radius: 40px
+            border-radius: 20px 20px 0px 0px
+            padding: 15px 27px
+
+        .appellation
+            padding: 12px 0 6px 0
+            font-size: var(--font-xxs)
+            line-height: 19px
+
+        .worth
+            padding: 12px 0 6px 0
+            font-size: var(--font-xxs)
+            line-height: 19px
 
     .discount
+        padding: 12px 0 6px 0
         background: var(--color-bg-s)
         box-shadow: none
 
@@ -1084,13 +1143,11 @@ body
         .rate
             font-size: var(--font-z)
 
-        .appellation 
-            padding: 8px 0
-
-        .worth 
-            padding: 8px 0
-
 @media screen and (max-width: 600px) 
+    .header
+        .dynamic
+            width: 80vw
+
     .we
         .main
             padding: 120px 18px 6px 18px
@@ -1173,18 +1230,35 @@ body
         .politic
             padding-top: 14px
             width: 284px
+            line-height: 15px
 
         .link
             padding-top: 0
-            font-size: var(--font-z)
-            line-height: 1%
+            font-size: var(--font-d)
             vertical-align: 0
+            line-height: inherit
 
 @media screen and (max-width: 438px) 
     .display
         height: 802px
     
     .popup
+        .thanks 
+            width: 277px !important
+            height: 272px !important
+
+        .dialog
+            padding: 40px 20px 20px 20px
+            width: 100vw
+            height: 100vh
+
+        .cross-dialog
+            top: 12px
+            right: 12px
+
+        .svg
+            stroke: var(--color-m)
+
         .heading
             font-size: var(--font-s)
 
