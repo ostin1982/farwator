@@ -69,7 +69,6 @@ if(price) {
             const tableId = table.getAttribute('href').replace('#', '');
             const tableWindow = document.getElementById(tableId);
 
-            body.addClass('lock');
             tableWindow.classList.add('notable');
         })
 
@@ -77,14 +76,12 @@ if(price) {
             event.preventDefault();
 
             const table = $('.table');
-            body.removeClass('lock');
             table.removeClass('notable');
         })
 
         crossLink.click(() => {     
 
             const table = $('.table');
-            body.removeClass('lock');
             table.removeClass('notable');
         })
     })

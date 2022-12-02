@@ -546,12 +546,31 @@ body {
   border-bottom: 1px solid var(--color-s);
   color: var(--color-s);
   text-decoration: none;
+  margin: 0;
+}
+.price .green .padding {
+  padding: 0;
+}
+.price .green:hover {
+  color: var(--color-s);
+  border-bottom: 1px solid var(--color-s);
 }
 .price .rate {
   width: 100%;
   border-bottom: 1px solid var(--color-q);
   color: var(--color-m);
   text-decoration: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price .rate .padding {
+  padding: 0;
+}
+.price .rate:hover {
+  color: var(--color-s);
+  border-bottom: 1px solid var(--color-s);
 }
 .price .appellation {
   margin: 0;
